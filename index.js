@@ -3,7 +3,7 @@ const express = require('express');
 const cors = require('cors');
 require('dotenv').config();
 
-const frontend = process.env.FRONTEND_URL;
+const frontend = process.env.FRONTEND_URL || 'http://localhost:5173';
 console.log(`Frontend URL: ${frontend}`);
 
 const app = express();
